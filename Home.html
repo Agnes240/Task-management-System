@@ -24,7 +24,13 @@
 <ul id="Tasklist"></ul>
 <script>
     function newElement(){
-     alert("Add Button Clicked!");
+        let name=document.getElementById("name").value
+        var node=document.createElement("L1");
+        var textnode=document.createTextnode(name+''+date+'');
+        node.appendChild(textnode);
+        document.getElementById("Tasklist").appendChild(node)
+        alert("Add Button Clicked!");
+
     }
 </script>
 </body>
