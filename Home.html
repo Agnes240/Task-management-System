@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <title>To-do-list</title>
+    <header><h2>To do list</h2></header>
+</head>
+<body>
+    <div class="center-form">
+    <Form>
+    <h3>Welcome to your to do list</h3><br>
+    <div class="row">
+    <label >Task Name</label> 
+    <input type="text" placeholder="Input task name" id="name"><br>
+    <label>Due Date</label>
+    <input type="date" id="date"><br>
+    <button onclick="newElement()" type="button" name="button" id="addBtn">Add New Task</button>
+    </div>
+</div>
+   </Form>
+</div>
+<ul id="Tasklist"></ul>
+<script>
+    function newElement(){
+     alert("Add Button Clicked!");
+    }
+</script>
+</body>
+</html>
